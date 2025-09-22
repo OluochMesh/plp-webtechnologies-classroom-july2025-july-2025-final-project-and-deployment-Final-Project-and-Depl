@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Showcase</title>
+    <link rel="stylesheet" href="/scripts/styles.css">
+</head>
+<body>
+    <header>
+        <img src="/images/omega_logo.jpg" alt="Omega Technologies Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="image-showcase" id="home-carousel">
+            <img src="/images/product1.jpg" alt="Product 1">
+            <img src="/images/product2.jpg" alt="Product 2">
+            <img src="/images/product3.jpg" alt="Product 3">
+        </section>
+        <section class="introduction">
+            <h2>Welcome to Omega Technologies</h2>
+            <p>Discover our range of innovative products designed to simplify your life. 
+                We combine quality craftsmanship with cutting-edge technology to bring you 
+                solutions that truly make a difference.
+            </p>
+        </section>
+        <section class="mvc">
+            <div class="mission">
+                <h3>Our Mission</h3>
+                <p>To deliver high-quality, reliable, and affordable products that empower 
+                   individuals and businesses to achieve more.</p>
+            </div>
+            <div class="vision">
+                <h3>Our Vision</h3>
+                <p>To be a global leader in product innovation, setting standards for 
+                    creativity, sustainability, and customer satisfaction.</p>
+            </div>
+            <div class="values">
+                <h3>Our Values</h3>
+                <ul>
+                    <li>Integrity</li>
+                    <li>Innovation</li>
+                    <li>Customer Focus</li>
+                    <li>Collaboration</li>
+                    <li>Sustainability</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="contacts">
+            <p>Phone: +254 796 852 295</p>
+            <p>Email: info@productshowcase.com</p>
+        </div>
+        <div class="quick-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="products.html">Products</a>
+            <a href="contacts.html">Contacts</a>
+        </div>
+        <div class="social-media">
+            <a href="#"><img src="/images/facebook.jpg" alt="Facebook"></a>
+            <a href="#"><img src="/images/twitter.jpg" alt="Twitter"></a>
+            <a href="#"><img src="/images/instagram.jpg" alt="Instagram"></a>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Omega Technologies</p>
+        </div>
+    </footer>
+    <script src="/js/script.js"></script>
+    <script>
+      // Initialize the image carousel after DOM loads
+      document.addEventListener('DOMContentLoaded', function() {
+        const carouselSection = document.getElementById('home-carousel');
+        if (carouselSection) {
+          new ImageCarousel(carouselSection);
+        }
+      });
+    </script>
+</body>
+</html>
