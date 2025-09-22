@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Showcase</title>
-    <link rel="stylesheet" href="/scripts/styles.css">
+    <!-- Use relative path for CSS -->
+    <link rel="stylesheet" href="scripts/styles.css">
 </head>
 <body>
     <header>
-        <img src="/images/omega_logo.jpg" alt="Omega Technologies Logo" class="logo">
+        <img src="images/omega_logo.jpg" alt="Omega Technologies Logo" class="logo">
         <nav>
             <ul>
                 <li><a href="index.html" class="active">Home</a></li>
@@ -21,9 +22,9 @@
     </header>
     <main>
         <section class="image-showcase" id="home-carousel">
-            <img src="/images/product1.jpg" alt="Product 1">
-            <img src="/images/product2.jpg" alt="Product 2">
-            <img src="/images/product3.jpg" alt="Product 3">
+            <img src="images/product1.jpg" alt="Product 1">
+            <img src="images/product2.jpg" alt="Product 2">
+            <img src="images/product3.jpg" alt="Product 3">
         </section>
         <section class="introduction">
             <h2>Welcome to Omega Technologies</h2>
@@ -68,20 +69,20 @@
             <a href="contacts.html">Contacts</a>
         </div>
         <div class="social-media">
-            <a href="#"><img src="/images/facebook.jpg" alt="Facebook"></a>
-            <a href="#"><img src="/images/twitter.jpg" alt="Twitter"></a>
-            <a href="#"><img src="/images/instagram.jpg" alt="Instagram"></a>
+            <a href="#"><img src="images/facebook.jpg" alt="Facebook"></a>
+            <a href="#"><img src="images/twitter.jpg" alt="Twitter"></a>
+            <a href="#"><img src="images/instagram.jpg" alt="Instagram"></a>
         </div>
         <div class="copyright">
             <p>&copy; 2025 Omega Technologies</p>
         </div>
     </footer>
-    <script src="/js/script.js"></script>
+    <!-- Use relative path for JS -->
+    <script src="js/script.js"></script>
     <script>
-      // Initialize the image carousel after DOM loads
       document.addEventListener('DOMContentLoaded', function() {
         const carouselSection = document.getElementById('home-carousel');
-        if (carouselSection) {
+        if (carouselSection && typeof ImageCarousel !== 'undefined') {
           new ImageCarousel(carouselSection);
         }
       });

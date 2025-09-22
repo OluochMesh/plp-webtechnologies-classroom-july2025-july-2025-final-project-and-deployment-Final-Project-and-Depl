@@ -858,3 +858,5 @@ footer > div {
         gap: 1rem;
     }
 }
+
+/* No asset path changes needed in current CSS, just ensure any url() references are relative if used. */
